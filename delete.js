@@ -12,8 +12,8 @@ function DeleteBuildFiles(filePath,excludeFiles) {//filePath string 指定要删
     this.excludeFiles = excludeFiles ? excludeFiles : [];
 }; 
 DeleteBuildFiles.prototype.apply = function(compile) {
-    filePath = this.filePath;
-    excludeFiles = this.excludeFiles;
+    var filePath = this.filePath;
+    var excludeFiles = this.excludeFiles;
     compile.plugin('done', function (compat) {
         const newlyCreatedAssets = compat.compilation.assets;
         const removeFiles = [];
