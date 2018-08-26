@@ -20,6 +20,10 @@
 				......
 					new removeFiles(perBuildDir,excludeFiles)//有排除文件的写法
 					new removeFiles(perBuildDir)//无排除文件的写法
+				......
+				    	//example
+				    	new removeFiles('./dist/module/admin/css/', ['dashboard.css', 'login.css']),
+                    			new removeFiles('./dist/module/default/css/', ['contact.css', 'home.css']),
 			]
 		}
 
